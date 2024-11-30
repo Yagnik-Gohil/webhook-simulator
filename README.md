@@ -18,6 +18,6 @@ npm install
 
 #### Run the simulator:
 ```
-node simulator.js
+npm run start
 ```
 The simulator will send random events to http://localhost:3000/api/webhook every 5 seconds.
