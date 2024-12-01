@@ -19,7 +19,7 @@ async function sendWebhookRandomly() {
         const response = await axios.post(BASE_URL, {
             source: service,
             event: eventData.event,
-            payload: eventData.payload,
+            payload: { id: new Date().getTime(), ...eventData.payload },
         });
 
         console.log(`Event sent successfully! Response:`, response.data);
